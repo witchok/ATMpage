@@ -1,0 +1,30 @@
+body {
+    padding: 20px;
+}
+
+.pin{
+    margin-right: 60%;
+}
+
+#cardInfo{
+    display: none;
+}
+
+
+.input-error{
+    color: red;
+}
+
+
+.error-field{
+    position: relative;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.not-succesful{
+    color:red;
+}
+.succesful{
+    color:green;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ATM</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+<h1>ATM</h1>
+<form method="get">
+  <div class="errors"></div>
+  <div class="form-group">
+    <label for="cardNumberInput">Card Number</label>
+    <input  maxlength="16" class="form-control" id="cardNumberInput" aria-describedby="emailHelp" placeholder="Card Number">
+    <div class="error-field">
+        <span id="cardNumberError" class= "input-error"></span>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputPIN">PIN</label>
+    <input type="password" email" maxlength="4" class="form-control pin" id="inputPIN" placeholder="PIN">
+    <div class="error-field">
+        <span id="pinError" class="input-error"></span>
+    </div>
+  </div>
+  <button type="submit" id="btn_submit" class="btn btn-primary">Submit</button>
+  <div id="cardInfo" class=cardInfo>
+      <h3>Card info</h3>
+      <div>
+        <span>Card Number: </span><span id="cardNumber"></span>
+      </div>
+      <div>
+        <span>Owner: </span><span id="ownerSpan"></span>
+      </div>
+      <div>
+        <span>Balance: </span><span id="balanceSpan"></span>
+      </div>
+      <button id="showTransactions" type="button" class="btn btn-secondary">Transactions</button><br/>
+      <div id="transactionsDiv" class="transactions">
+          <h3>Transactions</h3>      
+          <ul id="listTransactions" class="list-group">
+              
+          </ul>
+      </div>
+  </div>
+</form>
+</body>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./scripts/script.js"></script>
+</html>
